@@ -54,7 +54,7 @@ export class MapComponent implements OnInit {
   // for [leafletOptions]
   options = {
     zoom: 16,
-    center: latLng(38.907636, -77.073493)
+    center: latLng(38.9085, -77.073493) // offset N from new north to compensate for the popup
   };
 
   popup: any;
