@@ -1,6 +1,6 @@
-<section class="hero is-medium is-warning">
+<section class="hero section is-warning">
   <div class="hero-body">
-    <div class="container">
+    <div class="container" style="margin-left: 1rem">
       <h1 class="title is-1">
         GU Conf 2019
       </h1>
@@ -10,34 +10,26 @@
     </div>
   </div>
 </section>
-<section class="section has-background-white-bis">
-  <nav class="level">
-    <div class="level-item has-text-centered">
-      <div>
-        <p class="heading">Presenters</p>
-        <p class="title">32</p>
-      </div>
+
+<section class="section ismessage">
+  <article class="message is-medium">
+    <div class="message-header">
+      <p>What is <span class="title-font">ANGUISH</span>?</p>
+      <fa-icon icon="question"></fa-icon>
     </div>
-    <div class="level-item has-text-centered">
-      <div>
-        <p class="heading">Feelings</p>
-        <p class="title">hurt</p>
-      </div>
+    <div class="message-body">
+      This is a good place for the statement. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+      nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+      diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
+      <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+      sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
+      neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
     </div>
-    <div class="level-item has-text-centered">
-      <div>
-        <p class="heading">Days</p>
-        <p class="title">3</p>
-      </div>
-    </div>
-    <div class="level-item has-text-centered">
-      <div>
-        <p class="heading">Food</p>
-        <p class="title">free</p>
-      </div>
-    </div>
-  </nav>
+  </article>
 </section>
+
 <section class="section">
   <div class="tile is-ancestor">
     <div class="tile is-vertical is-8">
@@ -45,11 +37,21 @@
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-primary">
             <p class="title">When?</p>
-            <p class="subtitle is-4">March 32, 2019</p>
+            <p class="subtitle is-4">March 32-35</p>
+            <a [routerLink]="['/schedule']">Schedule</a>
           </article>
           <article class="tile is-child notification is-warning">
-            <p class="title">...tiles</p>
-            <p class="subtitle">Bottom tile</p>
+            <p class="title">Where?</p>
+            <p class="subtitle">Georgetown University</p>
+            <p>Copley Formal Lounge</p>
+            <figure class="image is-5by4">
+              <img
+                src="../../../assets/map_pic.png"
+                alt="Map Location"
+                class="is-centered"
+              />
+            </figure>
+            <a [routerLink]="['/location']">>>> Location</a>
           </article>
         </div>
         <div class="tile is-parent">

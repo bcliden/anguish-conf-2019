@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Julius+Sans+One|");
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Tenor+Sans");
+
+// $navbar-breakpoint: 768px;
+$family-sans-serif: "Lato", sans-serif;
+// $family-sans-serif: "Montserrat", sans-serif;
+
+@import "../node_modules/bulma/bulma.sass";
 
 html {
   height: 100%;
@@ -8,11 +16,14 @@ body {
   margin: 0;
   padding: 0;
   // font-family: Montserrat;
-  font-family: Lato;
+  // font-family: Lato;
   // font-family: Monda;
   // font-family: Raleway;
 }
 
 .title-font {
-  font-family: "Tenor Sans";
+  font-family: "Julius Sans One";
+  letter-spacing: 1px;
+  padding: 0 5px;
+  // font-family: "Tenor Sans"
 }

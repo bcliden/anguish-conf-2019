@@ -3,57 +3,59 @@
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="navbar-brand">
-    <a
-      class="navbar-item title-font is-uppercase has-text-weight-semibold is-size-4"
-      [routerLink]="['/']"
-    >
-      Anguish
-    </a>
-    <a
-      role="button"
-      class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-      [ngClass]="{ 'is-active': menuIsOpen }"
-      (click)="onClick($event)"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div class="navbar-menu is-dark" [ngClass]="{ 'is-active': menuIsOpen }">
-    <div class="navbar-start">
-      <a class="navbar-item" [routerLink]="['/location']">
-        Location
+  <div class="container">
+    <div class="navbar-brand">
+      <a
+        class="navbar-item title-font is-uppercase has-text-weight-semibold is-size-4"
+        [routerLink]="['/']"
+      >
+        Anguish
       </a>
-      <a class="navbar-item" [routerLink]="['/schedule']">
-        Schedule
-      </a>
-      <a class="navbar-item" [routerLink]="['/keynote']">
-        Keynote
-      </a>
-      <a class="navbar-item" [routerLink]="['/plenary']">
-        Plenary
-      </a>
-      <a class="navbar-item" [routerLink]="['/inclusivity']">
-        Inclusivity
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+        [ngClass]="{ 'is-active': menuIsOpen }"
+        (click)="onClick($event)"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
-    <!-- 
-    <div class="navbar-end">
-      <a class="navbar-item" [routerLink]="['/keynote']">
-        Keynote
-      </a>
-      <a class="navbar-item" [routerLink]="['/plenary']">
-        Plenary
-      </a>
-      <a class="navbar-item" [routerLink]="['/inclusivity']">
-        Inclusivity
-      </a>
-    </div> -->
+
+    <div class="navbar-menu is-dark" [ngClass]="{ 'is-active': menuIsOpen }">
+      <div class="navbar-start">
+        <a class="navbar-item" [routerLink]="['/location']">
+          Location
+        </a>
+        <a class="navbar-item" [routerLink]="['/schedule']">
+          Schedule
+        </a>
+        <a class="navbar-item" [routerLink]="['/keynote']">
+          Keynote
+        </a>
+        <a class="navbar-item" [routerLink]="['/plenary']">
+          Plenary
+        </a>
+        <a class="navbar-item" [routerLink]="['/inclusivity']">
+          Inclusivity
+        </a>
+      </div>
+      <!-- 
+          <div class="navbar-end">
+            <a class="navbar-item" [routerLink]="['/keynote']">
+              Keynote
+            </a>
+            <a class="navbar-item" [routerLink]="['/plenary']">
+              Plenary
+            </a>
+            <a class="navbar-item" [routerLink]="['/inclusivity']">
+              Inclusivity
+            </a>
+          </div> -->
+    </div>
   </div>
 </nav>
