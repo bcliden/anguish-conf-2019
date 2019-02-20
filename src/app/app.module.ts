@@ -4,6 +4,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);
+import { LeafletModule } from "@asymmetrik/ngx-leaflet";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -14,7 +15,7 @@ import { LocationComponent } from "./pages/location/location.component";
 import { MapComponent } from "./pages/location/map/map.component";
 import { PlenaryComponent } from "./pages/plenary/plenary.component";
 import { KeynoteComponent } from "./pages/keynote/keynote.component";
-import { InclusivityComponent } from './pages/inclusivity/inclusivity.component';
+import { InclusivityComponent } from "./pages/inclusivity/inclusivity.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,12 @@ import { InclusivityComponent } from './pages/inclusivity/inclusivity.component'
     KeynoteComponent,
     InclusivityComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    LeafletModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

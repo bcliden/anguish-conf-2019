@@ -28,19 +28,39 @@
 
     <div class="navbar-menu is-dark" [ngClass]="{ 'is-active': menuIsOpen }">
       <div class="navbar-start">
-        <a class="navbar-item" [routerLink]="['/location']">
+        <a
+          class="navbar-item"
+          [routerLink]="['/location']"
+          routerLinkActive="activeitem"
+        >
           Location
         </a>
-        <a class="navbar-item" [routerLink]="['/schedule']">
+        <a
+          class="navbar-item"
+          [routerLink]="['/schedule']"
+          routerLinkActive="activeitem"
+        >
           Schedule
         </a>
-        <a class="navbar-item" [routerLink]="['/keynote']">
+        <a
+          class="navbar-item"
+          [routerLink]="['/keynote']"
+          routerLinkActive="activeitem"
+        >
           Keynote
         </a>
-        <a class="navbar-item" [routerLink]="['/plenary']">
+        <a
+          class="navbar-item"
+          [routerLink]="['/plenary']"
+          routerLinkActive="activeitem"
+        >
           Plenary
         </a>
-        <a class="navbar-item" [routerLink]="['/inclusivity']">
+        <a
+          class="navbar-item"
+          [routerLink]="['/inclusivity']"
+          routerLinkActive="activeitem"
+        >
           Inclusivity
         </a>
       </div>

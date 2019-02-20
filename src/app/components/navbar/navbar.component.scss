@@ -1,0 +1,7 @@
+.activeitem {
+  border-bottom: 5px solid whitesmoke;
+}
+
+.navbar-menu.is-active .activeitem {
+  border-bottom: none;
+}
