@@ -5,3 +5,12 @@
 .navbar-menu.is-active .activeitem {
   border-bottom: none;
 }
+
+nav.navbar {
+  // to prevent the map from layering over the nav menu
+  z-index: 10000;
+}
+
+.navbar .title-font {
+  margin: 0 1rem;
+}

@@ -31,8 +31,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
       .pipe(
         filter(e => {
           return e instanceof NavigationStart || e instanceof ActivationStart;
-        }),
-        tap(console.log)
+        })
       )
       .subscribe(event => {
         if (event instanceof NavigationStart) {
@@ -40,9 +39,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
         }
       });
 
-    this.route.url
-      // .pipe(tap(console.log))
-      .subscribe(params => console.log("YO: ", params));
+    // this.route.url.subscribe(params => console.log("YO: ", params));
   }
 
   ngOnDestroy() {
