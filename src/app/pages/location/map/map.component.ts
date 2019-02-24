@@ -57,7 +57,8 @@ export class MapComponent implements OnInit {
     center: latLng(38.9085, -77.073493) // offset N from new north to compensate for the popup
   };
 
-  popup: any;
+  // popup: any;
+  tooltip;
 
   popupText(title, subtitle) {
     return `<h3 class="title is-6">${title}</h3>
@@ -67,20 +68,27 @@ export class MapComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.copleyFormalLounge.bindPopup(
-      this.popupText("Copley Formal Lounge", "Keynote Presentation")
-    );
+    this.copleyFormalLounge
+      .bindTooltip(
+        this.popupText("Copley Formal Lounge", "Keynote Presentation"),
+        { direction: "left", opacity: 0.9 }
+      )
+      .openTooltip();
+    this.newNorth
+      .bindTooltip(this.popupText("New North Bldg.", "Primary Location"), {
+        direction: "left",
+        opacity: 0.9
+      })
+      .openTooltip();
 
-    this.newNorth.bindPopup(
-      this.popupText("New North Bldg.", "Primary Location")
-    );
-
-    this.popup = L.popup()
+    this.tooltip = L.tooltip()
       .setLatLng([38.907636, -77.073493])
       .setContent(this.popupText("New North Bldg.", "Primary Location"));
   }
 
-  onMapReady(map: Map) {
-    map.openPopup(this.popup);
-  }
+  onMapReady = (map: Map) => {
+    map.openTooltip(this.tooltip);
+    console.log("map ready!");
+    console.log(map);
+  };
 }

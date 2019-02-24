@@ -1,4 +1,22 @@
-::ng-deep .leaflet-popup {
-  // open popup above marker
-  margin-bottom: 60px;
-}
+// ::ng-deep .leaflet-popup {
+//   // open popup above marker
+//   // margin-bottom: 60px;
+
+//   // move marker to the right side
+//   // bottom: -60px !important;
+//   bottom: -96px !important;
+//   left: 30px !important;
+// }
+
+// ::ng-deep .leaflet-popup-tip-container {
+//   // container to left middle
+//   left: 0;
+//   top: 25%;
+//   // swap these two
+//   width: 20px;
+//   height: 40px;
+//   // move to left side of container
+//   position: relative;
+//   right: -10px;
+//   top: 30px;
+// }
