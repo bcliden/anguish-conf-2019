@@ -5,3 +5,32 @@
 .margin-bot-small {
   margin-bottom: 0.5rem;
 }
+
+.hero.section {
+  background-image: url("../../../assets/images/AnguishHeader.jpg");
+  background-size: auto 300px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .hero-body {
+    padding: 0;
+  }
+  .hero.section {
+    background-position: 10%;
+  }
+}
+
+.hero-body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-body .title,
+.hero-body .subtitle {
+  padding: 0 3px;
+  // display: inline;
+  background-color: rgba(0, 0, 0, 0.75);
+}
