@@ -1,3 +1,22 @@
 .content {
   text-indent: 2rem;
 }
+
+.box {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.section.bios {
+  display: flex;
+  flex-direction: column;
+}
+
+.phillips {
+  align-self: flex-start;
+}
+
+.hensley,
+.rifkin {
+  align-self: flex-end;
+}
