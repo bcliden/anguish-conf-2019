@@ -6,6 +6,25 @@
   margin-bottom: 0.5rem;
 }
 
+a {
+  font-size: 1.2rem;
+}
+
+// flexbox section
+
+.tile.is-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// .front-page_tile-content {
+// }
+
+.front-page_tile-link {
+  align-self: flex-end;
+}
+
 .hero.section {
   background-image: url("../../../assets/images/AnguishHeader.jpg");
   background-size: auto 300px;

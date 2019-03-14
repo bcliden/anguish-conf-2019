@@ -11,23 +11,41 @@
   </div>
 </section>
 <section class="section ismessage">
-
-<!-- <h1 class="title is-2">Anguish Conference 2019</h1> -->
-
-  <article class="message is-medium">
+  <article class="message">
     <div class="message-header">
       <p>What is <span class="title-font">ANGUISH</span>?</p>
       <fa-icon icon="question"></fa-icon>
     </div>
-    <div class="message-body">
-      This is a good place for the statement. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit.
-      <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
-      nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
-      diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
-      <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-      sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
-      neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+    <div class="message-body content">
+      <p>
+        Are you feeling it now? The downward pressure of the graduate academic
+        environment; your labors under-rewarded and underappreciated; the
+        prospect of a low return on your investment in higher education; the MLA
+        Jobs Information List this year; the prohibitively high cost of living;
+        prohibitively expensive mental healthcare; healthcare inaccessibility
+        everywhere; the national crisis in student debt; wage stagnation;
+        political disengagement; personal estrangement—sad, lonely, burned out.
+        How are you feeling? And how do you pick yourself up after all of this,
+        how do you just do meaningful work in response?
+      </p>
+      <p>
+        We don’t know, either. But since misery does love company, the English
+        Graduate Student Association of Georgetown University invites graduate
+        scholars of all stripes, disciplines, and approaches to join us for an
+        interdisciplinary conference on the topic of anguish.
+      </p>
+      <p>
+        Some questions we hope to consider: As we face the wicked problems of
+        today’s world, what does it mean to turn away from making our work
+        “generative,” that catch-all academic buzzword for anything compelling
+        or catalyzing? What kinds of critical thinking happens when we get
+        together under the mantra of rejecting the compulsive productiveness of
+        capitalism? What does it look like to dwell in negativity and stay with
+        the trouble; to reject utopia and abide in ambiguity? How do we
+        conceptualize affects that cannot be politically organized? What kinds
+        of objects of study are produced under regimes of anguish, and how is
+        anguish inflected in their form?
+      </p>
     </div>
   </article>
 </section>
@@ -38,44 +56,64 @@
       <div class="tile">
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-primary">
-            <p class="title">When?</p>
-            <p class="subtitle is-4 margin-bot-small">Saturday March 30, 2019</p>
-            <p class="">8:00am - 5:30pm</p>
-            <a [routerLink]="['/schedule']">Schedule</a>
+            <div class="front-page_tile-content">
+              <p class="title">When?</p>
+              <p class="subtitle is-4 margin-bot-small">
+                Saturday March 30, 2019
+              </p>
+              <p class="">8:00am - 5:30pm</p>
+            </div>
+
+            <div class="front-page_tile-link">
+              <a [routerLink]="['/schedule']">Schedule...</a>
+            </div>
           </article>
           <article class="tile is-child notification is-warning">
-            <p class="title">Where?</p>
-            <p class="subtitle margin-bot-small">Georgetown University</p>
-            <p class>3700 O St., N.W.</p>
-            <p class>Washington, D.C. 20057 </p>
-            <figure class="image is-5by4">
-              <img
-                src="../../../assets/images/map_pic.png"
-                alt="Map Location"
-              />
-            </figure>
-            <a [routerLink]="['/location']">>>> Location</a>
+            <div class="front-page_tile-content">
+              <p class="title">Where?</p>
+              <p class="subtitle margin-bot-small">Georgetown University</p>
+              <p>New North, 3rd Floor</p>
+              <p class>3700 O St., N.W.</p>
+              <p class>Washington, D.C. 20057</p>
+              <!-- <figure class="image is-5by4">
+                  <img
+                    src="../../../assets/images/georgetown_wide_map.png"
+                    alt="Georgetown University Location on Map"
+                  />
+                </figure> -->
+            </div>
+            <div class="front-page_tile-link">
+              <a [routerLink]="['/location']">Location...</a>
+            </div>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification is-info">
-            <p class="title">Register now</p>
-            <p class="subtitle">Don't be this person</p>
-            <figure class="image is-4by3">
-              <img
-                class="is-centered"
-                src="https://umemphisphsa.files.wordpress.com/2015/10/anguish.jpg"
-              />
-            </figure>
+            <div class="front-page_tile-content">
+              <p class="title">Keynote Speaker</p>
+              <p class="subtitle">Mimi Khúc</p>
+              <figure class="image is-4by3">
+                <img
+                  class="is-centered"
+                  src="../../../assets/images/MimiKhuc.jpg"
+                />
+              </figure>
+              <p>Copley Formal Lounge</p>
+              <p>4:15-5:30 PM</p>
+            </div>
+            <div class="front-page_tile-link">
+              <a [routerLink]="['/keynote']">Learn More About Mimi...</a>
+            </div>
           </article>
         </div>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child notification is-danger">
-          <p class="title">Wide tile</p>
-          <p class="subtitle">Aligned with the right tile</p>
-          <div class="content">
-            <!--         content            -->
+          <div class="content subtitle">
+            <p>
+              Generously supported by the Georgetown University Department of
+              English and the Georgetown Graduate Student Government.
+            </p>
           </div>
         </article>
       </div>
@@ -84,15 +122,24 @@
       <article class="tile is-child notification is-success">
         <div class="content">
           <p class="title">Who?</p>
-          <p class="subtitle">Interdisciplinary</p>
+          <!-- <p class="subtitle">Interdisciplinary</p> -->
           <div class="content">
-            All members, presenters, attendees, sponsors, or business partners
-            are expected to be respectful of one another at all times. All forms
-            of harassment, particularly harassment related to gender, sexual
-            orientation, race, religion, disability, or physical appearance,
-            will not be tolerated.
+            Georgetown’s English Graduate Student Association (EGSA) counts all
+            enrolled English MA students as its members. EGSA’s elected board
+            represents the interests of graduate students by serving as liaisons
+            to the faculty, administration, and the student body at large.
+            Perhaps most importantly, the board takes responsibility for
+            providing opportunities for our students to develop and share their
+            work as scholars. As part of this work, EGSA organizes and hosts an
+            annual graduate student conference modeled on professional academic
+            conferences. The day-long event features presentations by graduate
+            students from schools nationwide, in addition to a plenary panel
+            made up of local faculty members and a keynote address given by a
+            well-known scholar in the field. Attendees include Georgetown
+            students and faculty members, as well as students and faculty from
+            nearby universities.
           </div>
-          <a [routerLink]="['/inclusivity']">Read more...</a>
+          <!-- <a [routerLink]="['/inclusivity']">Read more...</a> -->
         </div>
       </article>
     </div>
