@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Julius+Sans+One|");
+// @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Julius+Sans+One|");
 // @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Tenor+Sans|");
 
 // $navbar-breakpoint: 768px;
 $family-sans-serif: "Lato", sans-serif;
 // $family-sans-serif: "Montserrat", sans-serif;
+
+$primary: #6e94af;
+// $success
+// $info
+$warning: #efbb2b;
+$danger: #c03221;
+
+// $message-background-color: #efefef;
 
 @import "../node_modules/bulma/bulma.sass";
 
@@ -22,7 +31,8 @@ body {
 }
 
 .title-font {
-  font-family: "Julius Sans One";
+  // font-family: "Julius Sans One";
+  font-family: "Tenor Sans";
   letter-spacing: 1px;
   padding: 0 5px;
   // font-family: "Tenor Sans"
