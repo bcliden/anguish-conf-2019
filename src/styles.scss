@@ -40,3 +40,12 @@ body {
   // padding: 0 5px;
   // font-family: "Tenor Sans"
 }
+
+@media screen and (max-width: 375px) {
+  .title.is-1.title-font {
+    font-size: 2.8rem;
+  }
+  .hero-body {
+    padding-left: 0;
+  }
+}
