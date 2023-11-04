@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh-deploy": "ng build --prod --base-href 'https://bcliden.github.io/anguish-conf-2019' && npx angular-cli-ghpages --dir=dist/anguish-conf-mar2019 --cname=anguishconference.com"
+    "gh-deploy": "ng build --prod --base-href 'https://bcliden.github.io/anguish-conf-2019' && npx angular-cli-ghpages --dir=dist/anguish-conf-mar2019"
   },
   "private": true,
   "dependencies": {
